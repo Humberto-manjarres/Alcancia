@@ -11,7 +11,7 @@ import maestros.Alcancia;
  *
  * @author amejia
  */
-public class AlcanciaRepository {
+public class AlcanciaRepositorio {
     
     private static Alcancia alcancia=new Alcancia();
     

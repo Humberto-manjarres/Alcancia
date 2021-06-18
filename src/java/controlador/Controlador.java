@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import jdk.nashorn.internal.ir.BreakNode;
 import servico.ServicioMoneda;
 import maestros.Moneda;
-import repositorio.AlcanciaRepository;
+import repositorio.AlcanciaRepositorio;
 
 /**
  *

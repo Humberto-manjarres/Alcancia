@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import maestros.Alcancia;
-import repositorio.AlcanciaRepository;
+import repositorio.AlcanciaRepositorio;
 
 /**
  *
@@ -24,7 +24,7 @@ public class ServicioMoneda {
 
     Moneda monedas;
     List<Moneda> listaMonedas = new ArrayList<>();
-    AlcanciaRepository alcanciaRepository= new AlcanciaRepository();
+    AlcanciaRepositorio alcanciaRepository= new AlcanciaRepositorio();
    
     
 
