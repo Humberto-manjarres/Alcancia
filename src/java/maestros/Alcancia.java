@@ -28,7 +28,16 @@ public class Alcancia {
     
     
     public void setMoneda(Moneda moneda){
-        getMonedas().add(moneda);
+       
+        if(monedaValida(moneda)){
+            getMonedas().add(moneda);
+        }
+    }
+
+    private boolean monedaValida(Moneda moneda) {
+        
+        return moneda.getValor()==50 || moneda.getValor()==100 || moneda.getValor()==200
+                || moneda.getValor()==500 || moneda.getValor()==1000;
     }
     
     
