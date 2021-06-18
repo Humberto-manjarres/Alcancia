@@ -9,12 +9,12 @@ package maestros;
  *
  * @author Humberto Manjarres
  */
-public class Monedas {
+public class Moneda {
     private String moneda;
     private int cantidad;//numero de monedas de su tipo
     private int valor;// sumatoria de las monedas de su tipo
 
-    public Monedas() {
+    public Moneda() {
     }
 
     public String getMoneda() {

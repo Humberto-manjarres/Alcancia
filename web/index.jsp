@@ -76,8 +76,12 @@
                         </div>
                         <input type="submit" name="accion" value="Agregar" class="btn btn-info">
                         <!--<input type="submit" name="accion" value="Limpiar" class="btn btn-success">-->
-                        <input type="submit" name="accion" value="Vaciar Alcancia" class="btn btn-danger">
+                        
+                            <input type="submit" name="accion" value="VaciarAlcancia" class="btn btn-danger">
+                        
+                        
                     </form>
+                    
 
                 </div>
             </div>
