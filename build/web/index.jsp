@@ -1,6 +1,6 @@
 <%-- 
     Document   : index
-    Created on : 16/06/2021, 06:52:49 PM
+    Created on : 17/06/2021, 06:52:49 PM
     Author     : Humberto Manjarres
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -37,26 +37,6 @@
                 }
 
             }
-           /* 
-            function moneda(n) {
-                if (n === 50) {
-                    a = a + 1;
-                    document.getElementById("moneda1").value = a;
-                } else if (n === 100) {
-                    b = b + 1;
-                    document.getElementById("moneda2").value = b;
-                } else if (n === 200) {
-                    c = c + 1;
-                    document.getElementById("moneda3").value = c;
-                } else if (n === 500) {
-                    d = d + 1;
-                    document.getElementById("moneda4").value = d;
-                } else if (n === 1000) {
-                    e = e + 1;
-                    document.getElementById("moneda5").value = e;
-                }
-
-            }*/
 
 
         </script>
@@ -95,7 +75,7 @@
                             <label>$1000 <input type="number" autocomplete="off" id="moneda5" min="1" name="txtMoneda5" class="form-control" style="width: 60px"></label>
                         </div>
                         <input type="submit" name="accion" value="Agregar" class="btn btn-info">
-                        <input type="submit" name="accion" value="Limpiar" class="btn btn-success">
+                        <!--<input type="submit" name="accion" value="Limpiar" class="btn btn-success">-->
                         <input type="submit" name="accion" value="Vaciar Alcancia" class="btn btn-danger">
                     </form>
 
@@ -103,38 +83,45 @@
             </div>
             <div class="col-sm-8">
                 <table class="table table-hover" style="text-align: center">
-                    <thead>
-                        <tr>
-                            <th>Moneda</th>
-                            <th>Cantidad x Moneda</th>
-                            <th>Valor total x Moneda</th>
-                        </tr>
-                    </thead>
 
-                    <tbody style="text-align: center">
-                        <c:forEach var="money" items="${lista_monedas}">
-                            <tr>
-                                <td>${money.getMoneda()}</td>
-                                <td>${money.getCantidad()}</td>
-                                <td>${money.getValor()}</td>
-                            </tr>
-                        </c:forEach>
-                        <tr style="background: #D7DBDD">
-                            <td><strong>Total</strong></td>
-                            <td>
-                                <strong>${totalCantidad}</strong>   
-                            </td>
-                            <td>$ <strong>${totalValor}</strong></td>
-                        </tr>
-                    </tbody>
+
+                    <TR  style="background-color: #D7DBDD; font-weight: bold">
+                        <TH></TH>
+                        <TD>50</TD> <TD>100</TD> <TD>200</TD> <td>500</td> <td>1000</td>
+                    </TR>
+                    <TR>
+                        <TH>Unidades</TH>
+                        <TD>${cantidad_50}</TD> 
+                        <TD>${cantidad_100}</TD> 
+                        <TD>${cantidad_200}</TD>
+                        <TD>${cantidad_500}</TD>
+                        <TD>${cantidad_1000}</TD>
+                    </TR>
+                    <TR>
+                        <TH>Total x Unidad</TH>
+                        <TD>${total_50}</TD> 
+                        <TD>${total_100}</TD> 
+                        <TD>${total_200}</TD>
+                        <TD>${total_500}</TD>
+                        <TD>${total_1000}</TD>
+                    </TR>
+
+
                 </table>
-
+                    
+                    <hr/>    
+                    <p style="font-size: large">Cantidad monedas: <strong>${cantidad_monedas}</strong></p>        
+                    <br/>
+                    <p style="font-size: large">Valor Total: <strong>${valor_total}</strong></p>
 
             </div>
-        </div>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+        </div>
+    <center>
+        ${mensaje}
+    </center> 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
 </html>
