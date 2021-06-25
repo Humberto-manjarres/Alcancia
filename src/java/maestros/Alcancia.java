@@ -11,7 +11,7 @@ import static java.util.Objects.isNull;
 
 /**
  *
- * @author amejia
+ * @author Humberto Manjarres
  */
 public class Alcancia {
     

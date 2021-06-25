@@ -4,8 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Humberto%20Manjarres/Documents/NetBeansProjects/Alcancia/src/java/controlador/Controlador.java</file>
+            <file>file:/C:/Users/Humberto%20Manjarres/Documents/NetBeansProjects/Alcancia/src/java/servico/ServicioMoneda.java</file>
             <file>file:/C:/Users/Humberto%20Manjarres/Documents/NetBeansProjects/Alcancia/web/index.jsp</file>
-            <file>file:/C:/Users/Humberto%20Manjarres/Documents/NetBeansProjects/Alcancia/src/java/logica/Monedas.java</file>
+            <file>file:/C:/Users/Humberto%20Manjarres/Documents/NetBeansProjects/Alcancia/src/java/repositorio/AlcanciaRepositorio.java</file>
+            <file>file:/C:/Users/Humberto%20Manjarres/Documents/NetBeansProjects/Alcancia/src/java/maestros/Moneda.java</file>
+            <file>file:/C:/Users/Humberto%20Manjarres/Documents/NetBeansProjects/Alcancia/src/java/maestros/Alcancia.java</file>
         </group>
     </open-files>
 </project-private>

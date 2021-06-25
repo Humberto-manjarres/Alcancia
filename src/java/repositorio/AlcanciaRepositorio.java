@@ -9,7 +9,7 @@ import maestros.Alcancia;
 
 /**
  *
- * @author amejia
+ * @author Humberto Manjarres
  */
 public class AlcanciaRepositorio {
     
