@@ -14,6 +14,8 @@ import static java.util.Objects.isNull;
  * @author Humberto Manjarres
  */
 public class Alcancia {
+    
+    
     //lista donde solo guardamos objetos de tipo Moneda
     List<Moneda> monedas;
 
@@ -23,7 +25,8 @@ public class Alcancia {
         el método getMoneda es para saber las monedas agregadas a la lista
     */
     public List<Moneda> getMonedas() {
-        /*por primera vez crea la instancia del resto la retorna*/
+        /*por primera vez crea la instancia y retorna vacio 
+        por segunda vez retornará con monedas*/
         if(isNull(monedas)){
             monedas=new ArrayList();
         }

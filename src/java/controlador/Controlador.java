@@ -70,7 +70,7 @@ public class Controlador extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String accion=request.getParameter("accion");
-        
+        //a la defensiva
         if("VaciarAlcancia".equals(accion)){
             servicioMoneda.vaciarAlcancia();
         }

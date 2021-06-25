@@ -108,14 +108,16 @@ public class ServicioMoneda {
         //monedas de 50 
         int acuMoneda = monedas.stream().filter(moneda -> moneda.getValor() == 50).collect(Collectors.summingInt(Moneda::getValor));
         int acumCantidad = (int) monedas.stream().filter(moneda -> moneda.getValor() == 50).count();
-        request.setAttribute("total_50", acuMoneda);
-        request.setAttribute("cantidad_50", acumCantidad);
-
+        request.setAttribute("total_50", acuMoneda);//valor total de todas las monedas de 50
+        request.setAttribute("cantidad_50", acumCantidad);//cantidad de las monedas de 50
+        
+        //monedas de 100
         acuMoneda = monedas.stream().filter(moneda -> moneda.getValor() == 100).collect(Collectors.summingInt(Moneda::getValor));
         acumCantidad = (int) monedas.stream().filter(moneda -> moneda.getValor() == 100).count();
         request.setAttribute("total_100", acuMoneda);
         request.setAttribute("cantidad_100", acumCantidad);
-
+        
+        //monedas de 200
         acuMoneda = monedas.stream().filter(moneda -> moneda.getValor() == 200).collect(Collectors.summingInt(Moneda::getValor));
         acumCantidad = (int) monedas.stream().filter(moneda -> moneda.getValor() == 200).count();
         request.setAttribute("total_200", acuMoneda);
