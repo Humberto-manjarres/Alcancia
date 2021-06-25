@@ -32,6 +32,9 @@ public class Controlador extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         
+        /*el controlador solo redirecciona, la logica estará en otra clase.
+            el controlador se comunicará con el servicio y el servicio con repositorio
+        */
         
         servicioMoneda.agregarMoneda(request,response);
         request.getRequestDispatcher("index.jsp").forward(request, response);

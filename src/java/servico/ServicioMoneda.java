@@ -35,6 +35,8 @@ public class ServicioMoneda {
         String moneda5 = request.getParameter("txtMoneda5");
         int cantidadMoneda = 0;
         Moneda moneda = null;
+        
+        /* alcanciaRepository va devolver un objeto alcancia estatico que se guarda en un objeto de tipo alcancia*/
         Alcancia alcancia = alcanciaRepository.getAlcancia();
         
         
